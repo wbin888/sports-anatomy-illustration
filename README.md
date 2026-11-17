@@ -114,5 +114,5 @@ python3 tests/test_illustrator_runtime.py
 ## 许可与免责声明
 
 - 整包采用 [MIT](LICENSE)：Copyright © 2026 wilbert（上游核心 Skill），Copyright © 2026 wbin888（改编与运动解剖模块）。改编内容见 [NOTICE.md](skills/sports-anatomy-illustration/NOTICE.md)。
-- 上游仓库中以 CC BY 4.0 授权的展示内容未复制到本仓库。README 中的图片为本仓库原创示意图，在 Figma 中设计并导出（PNG 2 倍）。`docs/images/generate.py` 及其输出的 `*.svg` 只是导入 Figma 前的初稿，最终以 PNG 为准。
+- 上游仓库中以 CC BY 4.0 授权的展示内容未复制到本仓库。README 中的图片为本仓库原创示意图，由 `python3 docs/images/generate.py` 生成 SVG，再用 `rsvg-convert -z 2` 转为 PNG。
 - 本 Skill 只提供制作与质控流程，**不构成医疗、训练或康复建议**，不代表任何作品已通过医学审核。缺少人工审签的作品，应标为“制作完成，医学待审”。

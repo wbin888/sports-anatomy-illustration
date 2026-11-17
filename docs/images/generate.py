@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Generate draft SVGs for the README illustrations (schematic, not to scale). MIT; see ../../LICENSE.
+"""Generate the README illustrations (schematic, not to scale). MIT; see ../../LICENSE.
 
-These drafts were imported into Figma, refined there, and exported as the final
-2x PNGs used by README.md. Re-running this script does not update the PNGs.
+PNG: rsvg-convert -z 2 X.svg -o X.png
 
 Usage: python3 docs/images/generate.py
 """
