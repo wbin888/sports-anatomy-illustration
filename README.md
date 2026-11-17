@@ -1,8 +1,8 @@
-<p align="center"><img src="docs/images/banner.png" alt="运动解剖与医学绘图 Skill 横幅" width="100%"></p>
+<p align="center"><img src="docs/images/banner.webp" alt="运动解剖与医学绘图 Skill 横幅" width="100%"></p>
 
 # 运动解剖与医学绘图 Skill · Sports Anatomy Illustration
 
-[![Validate](https://github.com/wbin888/sports-anatomy-illustration/actions/workflows/validate.yml/badge.svg)](https://github.com/wbin888/sports-anatomy-illustration/actions/workflows/validate.yml)
+[查看自动校验结果](https://github.com/wbin888/sports-anatomy-illustration/actions/workflows/validate.yml)
 
 这是一个面向 AI Agent（Claude Code、Codex、Copilot 等支持 [Agent Skills](https://agentskills.io/specification) 的宿主）的 Skill，用于制作**有据可查**的人体解剖与运动解剖插画：
 
@@ -18,9 +18,9 @@
 
 ## 新增的运动解剖模块
 
-<p align="center"><img src="docs/images/squat-phases.png" alt="杠铃后蹲两分期肌肉分工示意：下蹲离心、起立向心，竖脊肌等长稳定" width="100%"></p>
+<p align="center"><img src="docs/images/squat-phases.webp" alt="杠铃后蹲动作分期：左图接近下蹲底部，右图处于起身途中" width="100%"></p>
 
-<p align="center"><sub>示例：由 Skill 的收缩方式编码规则绘制（示意图，非按比例）。</sub></p>
+<p align="center"><sub>杠铃后蹲：左为接近下蹲底部，右为起身途中。仅示意动作阶段，不作技术处方或肌肉激活测量。依据：SQ22。</sub></p>
 
 | 内容 | 位置 |
 |---|---|
@@ -52,23 +52,27 @@
 | 教学与宣教插画 `teaching` | 学生、患者宣教 | 骨骼肌的结构层次 |
 | 科研示意图 `research` | 论文、基金、学术报告 | 抗阻训练与骨骼肌肥大 |
 
-<p align="center"><img src="docs/images/comic-example.png" alt="科普漫画示例：跑步后膝前痛，三格讲解髌腱与就医提示" width="100%"></p>
+<p align="center"><img src="docs/images/comic-example.webp" alt="科普漫画：跑步后膝前不适、咨询专业人员、记下要点" width="100%"></p>
+<p align="center"><sub>科普漫画分镜：跑后发现不适 → 咨询专业人员 → 记下交流要点。虚构情境，不以疼痛位置推断诊断。</sub></p>
 
-<p align="center"><img src="docs/images/teaching-example.png" alt="教学插画示例：肌肉、肌束、肌纤维、肌原纤维到肌节的结构层次" width="100%"></p>
+<p align="center"><img src="docs/images/teaching-example.webp" alt="教学插画：从左向右依次放大骨骼肌、肌束和肌纤维" width="100%"></p>
+<p align="center"><sub>教学插画：骨骼肌 → 肌束 → 肌纤维。各层逐级放大，不按共同尺度绘制。依据：SEER。</sub></p>
 
-<p align="center"><img src="docs/images/research-example.png" alt="科研示意图示例：抗阻训练经 mTORC1 促进肌蛋白合成与肌肥大，假说关系用虚线" width="100%"></p>
+<p align="center"><img src="docs/images/research-example.webp" alt="科研绘图主题插画：桌上的哑铃、显微镜和显示抽象连线的电脑" width="100%"></p>
+<p align="center"><sub>科研绘图主题插画。实际关系和证据状态见下方的科研关系登记，屏幕图案不代表实验数据或机制结论。</sub></p>
 
 ## 每幅解剖图都能追溯到具体参考
 
-README 中的每幅示例图都在图上标注了来源 ID，例如 `G350` 指 Gray 1918 图 350。逐图、逐元素的对照见 [`docs/examples/references.md`](docs/examples/references.md)，科研示意图的关系登记见 [`research-example.mechanism-graph.json`](docs/examples/research-example.mechanism-graph.json)。
+含解剖结构或动作阶段的示例在图注中标明来源 ID，逐图、逐元素的对照见 [`docs/examples/references.md`](docs/examples/references.md)。科研机制的证据状态和来源另见 [`research-example.mechanism-graph.json`](docs/examples/research-example.mechanism-graph.json)。
 
-- 解剖形态参考公有领域图版（Gray 1918、NCI SEER）；OpenStax（CC BY 4.0）只作对照，不复制。
-- 肌肉角色和机制关系引用具体文献（PMID / DOI）；推断出的内容和假说在表中单独标出，假说在图中用虚线。
-- 当前只通过检索核对了图号和文献信息，还没有逐图对照原图形态，因此状态为“制作完成，医学待审”。
+- 教学插画按 NCI SEER 原图核对骨骼肌层次；动作示意只呈现外观阶段，不从图片推断肌电和负荷。
+- 示例图用于说明呈现方式；含医学内容的图尚未由专业人员审签。
 
 ## 制作流程
 
-<p align="center"><img src="docs/images/workflow.png" alt="制作流程：动作问题、真实取证、动作规格、自洽校验、生成与排字、质检交付" width="100%"></p>
+<p align="center"><img src="docs/images/workflow.webp" alt="制作流程：动作问题、真实取证、动作规格、自洽校验、生成与排字、质检交付" width="100%"></p>
+
+按从左到右、从上到下阅读：明确问题 → 核对参考 → 拟定规格 → 检查自洽 → 制图排字 → 质检交付。道具上的图画仅为流程场景，不作结构讲解。
 
 ## 安装
 
@@ -114,5 +118,5 @@ python3 tests/test_illustrator_runtime.py
 ## 许可与免责声明
 
 - 整包采用 [MIT](LICENSE)：Copyright © 2026 wilbert（上游核心 Skill），Copyright © 2026 wbin888（改编与运动解剖模块）。改编内容见 [NOTICE.md](skills/sports-anatomy-illustration/NOTICE.md)。
-- 上游仓库中以 CC BY 4.0 授权的展示内容未复制到本仓库。README 中的图片为本仓库原创示意图，由 `python3 docs/images/generate.py` 生成 SVG，再用 `rsvg-convert -z 2` 转为 PNG。
+- README 的六张 WebP 由图像生成工具重新生成，没有使用旧 SVG 或复制上游展示图。[生成提示词](docs/images/prompts.md)。
 - 本 Skill 只提供制作与质控流程，**不构成医疗、训练或康复建议**，不代表任何作品已通过医学审核。缺少人工审签的作品，应标为“制作完成，医学待审”。
