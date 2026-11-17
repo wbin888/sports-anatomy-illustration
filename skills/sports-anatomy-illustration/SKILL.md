@@ -15,8 +15,10 @@ description: "制作、返修或审阅三类医学作品：面向患者和公众
 |---|---|
 | 面向患者和公众的科普漫画：脚本、分镜、对白、彩色页面 | [作品类型·科普漫画](references/output-types.md#科普漫画) + [漫画与医学插画流程](references/workflow.md)，按当前阶段读取 |
 | 教学与宣教用的医学插画：单幅或系列解剖教学图、患者宣教图、挂图 | [作品类型·教学与宣教插画](references/output-types.md#教学与宣教插画) + [漫画与医学插画流程](references/workflow.md)，不需要角色与对白 |
-| 运动解剖图、训练动作肌肉分工、动作分期/步态/跳跃图 | [运动解剖规则](references/sports-anatomy.md) + [动作分析](references/movement-analysis.md)，制作阶段仍沿用漫画与医学插画流程 |
-| 运动损伤机制、预防训练与康复动作示意 | [运动损伤与康复](references/sports-injury-and-rehab.md)，动作部分同上 |
+| 运动解剖图分析：运动结构、关节动作与组织分工 | [四类运动分析](references/output-types.md#四类运动分析) + [运动解剖规则](references/sports-anatomy.md) |
+| 健身动作解剖分析：训练动作分期、肌肉角色与收缩方式 | [四类运动分析](references/output-types.md#四类运动分析) + [动作分析](references/movement-analysis.md) |
+| 运动损伤解剖分析：受累结构、部位和常见受伤机制 | [四类运动分析](references/output-types.md#四类运动分析) + [运动损伤与康复](references/sports-injury-and-rehab.md) |
+| 康复示范解剖分析：分阶段动作、目标组织与安全边界 | [四类运动分析](references/output-types.md#四类运动分析) + [运动损伤与康复](references/sports-injury-and-rehab.md) + [动作分析](references/movement-analysis.md) |
 | 涉及医学结构的科研示意图：结构示意图、机制图、图形摘要 | [作品类型·科研示意图](references/output-types.md#科研示意图) + [科研绘图流程](references/research-workflow.md) |
 | 局部返修、排字或审阅 | 沿用当前图稿，只读下表中对应说明 |
 
@@ -45,6 +47,8 @@ description: "制作、返修或审阅三类医学作品：面向患者和公众
 新项目尚无组织方式时，可运行 `scripts/init_project.py <项目目录> --type comic|teaching|research`（默认 comic），分别建立科普漫画、教学与宣教插画、科研示意图的目录与模板；运动解剖项目另加 `--sports`。既有项目沿用当前目录与主稿。
 
 ## 共用医学与进度规则
+
+六类任务都须做到**每幅解剖图可追溯，每项教学结构有出处**。用中文标准解剖名标注结构；英文按读者和版式需要附列。成图或随附图注标明图号与来源 ID；用[逐图逐结构对照表](references/templates.md#逐图逐结构对照表)连到与部位、侧别、视角和层次相匹配的真实参考。不能用通用书目、风格图或 AI 成图替代医学依据。
 
 医学论断和结构受可核验证据约束。解剖图、机制示意、功能比喻与诊断影像须明确区分。探索性机制保留假说性质，功能模型不替代真实形态，生成影像不得充当诊断证据。本 Skill 不承担实验数据分析或统计作图。
 
