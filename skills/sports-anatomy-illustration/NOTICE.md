@@ -10,7 +10,8 @@ Copyright © 2026 wbin888
 - 更名为 `sports-anatomy-illustration`，入口与任务路由加入运动解剖分支；
 - 新增 `references/sports-anatomy.md`、`references/movement-analysis.md`、`references/sports-injury-and-rehab.md`；
 - 新增 `data/`（肌肉图谱、关节动作词表、动作模板）、`assets/movement-spec.example.json`、`scripts/check_movement_spec.py`；
-- 初始化器增加 `--sports` 选项；移除指向上游发布渠道的更新器与校验清单。
+- 新增 `references/output-types.md`，把科普漫画、教学与宣教插画、科研示意图列为三类独立入口，并补充宣教图规则与各类作品的运动主题用法；
+- 初始化器增加 `--type comic|teaching|research` 与 `--sports` 选项；移除指向上游发布渠道的更新器与校验清单。
 
 上游仓库中按 CC BY 4.0 授权的文档、漫画与展示内容（如 `docs/showcase/`）未复制到本包；`references/anatomy-evidence-example.md` 仅以链接方式引用。
 

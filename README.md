@@ -9,7 +9,10 @@
 - 🏋️ **运动解剖图**：训练动作的肌肉分工、主动肌/协同肌/拮抗肌/稳定肌，以及向心、离心、等长收缩的视觉编码
 - 🏃 **动作分期图**：深蹲、硬拉、俯卧撑、跑步步态、纵跳等的分期、关节动作和力/力矩箭头
 - 🩹 **运动损伤与康复示意**：ACL、踝扭伤、腘绳肌拉伤、肩袖等损伤的取证要点，以及康复示范的表达边界
-- 📚 **人体解剖教学插画、医学科普漫画、科研示意图**：沿用上游 medical-illustration 的完整流程
+- 💬 **面向患者和公众的科普漫画**：多格叙事、生活化语言、就医提示
+- 📚 **教学与宣教用的医学插画**：一图一目标、层次放大、标准术语
+- 🔬 **涉及医学结构的科研示意图**：机制关系登记、证据状态线型、期刊排版
+- 🔎 **每幅解剖图都能追溯到具体参考**：图中标来源 ID，并附逐图对照表
 
 本项目改编自 [wilbert-MD-PhD/medical-illustration](https://github.com/wilbert-MD-PhD/medical-illustration)（MIT），并新增运动解剖模块。
 
@@ -39,6 +42,30 @@
 
 > 数据文件只是教学索引，不能作为视觉证据。起止点、神经根节段等在不同教材间存在差异，作图前须按所选来源逐项核对。
 
+## 三类作品
+
+用 `init_project.py --type comic|teaching|research` 建立对应项目，各类型的读者、叙事和交付要求见 [`references/output-types.md`](skills/sports-anatomy-illustration/references/output-types.md)。
+
+| 类型 | 面向 | 示例 |
+|---|---|---|
+| 科普漫画 `comic` | 患者与公众 | 跑完步，膝盖前面为什么疼？ |
+| 教学与宣教插画 `teaching` | 学生、患者宣教 | 骨骼肌的结构层次 |
+| 科研示意图 `research` | 论文、基金、学术报告 | 抗阻训练与骨骼肌肥大 |
+
+<p align="center"><img src="docs/images/comic-example.png" alt="科普漫画示例：跑步后膝前痛，三格讲解髌腱与就医提示" width="100%"></p>
+
+<p align="center"><img src="docs/images/teaching-example.png" alt="教学插画示例：肌肉、肌束、肌纤维、肌原纤维到肌节的结构层次" width="100%"></p>
+
+<p align="center"><img src="docs/images/research-example.png" alt="科研示意图示例：抗阻训练经 mTORC1 促进肌蛋白合成与肌肥大，假说关系用虚线" width="100%"></p>
+
+## 每幅解剖图都能追溯到具体参考
+
+README 中的每幅示例图都在图上标注了来源 ID，例如 `G350` 指 Gray 1918 图 350。逐图、逐元素的对照见 [`docs/examples/references.md`](docs/examples/references.md)，科研示意图的关系登记见 [`research-example.mechanism-graph.json`](docs/examples/research-example.mechanism-graph.json)。
+
+- 解剖形态参考公有领域图版（Gray 1918、NCI SEER）；OpenStax（CC BY 4.0）只作对照，不复制。
+- 肌肉角色和机制关系引用具体文献（PMID / DOI）；推断出的内容和假说在表中单独标出，假说在图中用虚线。
+- 当前只通过检索核对了图号和文献信息，还没有逐图对照原图形态，因此状态为“制作完成，医学待审”。
+
 ## 制作流程
 
 <p align="center"><img src="docs/images/workflow.png" alt="制作流程：动作问题、真实取证、动作规格、自洽校验、生成与排字、质检交付" width="100%"></p>
@@ -61,6 +88,7 @@
 ```bash
 cd skills/sports-anatomy-illustration
 python3 scripts/init_project.py ~/my-squat-figure --sports      # 建立项目，含动作分期表与 movement-spec.json
+python3 scripts/init_project.py ~/knee-comic --type comic        # 科普漫画；另有 teaching、research
 python3 scripts/check_movement_spec.py ~/my-squat-figure/02_动作分析/movement-spec.json
 python3 scripts/check_movement_spec.py                          # 自检随包的 5 个动作模板
 ```
@@ -86,5 +114,5 @@ python3 tests/test_illustrator_runtime.py
 ## 许可与免责声明
 
 - 整包采用 [MIT](LICENSE)：Copyright © 2026 wilbert（上游核心 Skill），Copyright © 2026 wbin888（改编与运动解剖模块）。改编内容见 [NOTICE.md](skills/sports-anatomy-illustration/NOTICE.md)。
-- 上游仓库中以 CC BY 4.0 授权的展示内容未复制到本仓库。README 中的图片为本仓库原创示意图，可用 `python3 docs/images/generate.py` 重新生成。
+- 上游仓库中以 CC BY 4.0 授权的展示内容未复制到本仓库。README 中的图片为本仓库原创示意图，在 Figma 中设计并导出（PNG 2 倍）。`docs/images/generate.py` 及其输出的 `*.svg` 只是导入 Figma 前的初稿，最终以 PNG 为准。
 - 本 Skill 只提供制作与质控流程，**不构成医疗、训练或康复建议**，不代表任何作品已通过医学审核。缺少人工审签的作品，应标为“制作完成，医学待审”。

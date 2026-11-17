@@ -36,10 +36,11 @@
 ```bash
 python3 ../../tests/test_init_project.py   # 在仓库中运行
 python3 scripts/init_project.py /path/to/new-project
-python3 scripts/init_project.py /path/to/new-project --sports   # 运动解剖项目
+python3 scripts/init_project.py /path/to/new-project --type teaching   # 教学与宣教插画
+python3 scripts/init_project.py /path/to/new-project --type research --sports   # 运动科研示意图
 python3 scripts/check_movement_spec.py                           # 自检随包动作模板
 ```
 
-仅用于新漫画或医学插画；独立科研图按[科研流程](research-workflow.md)组织，不调用此初始化器。默认建立 5 个必要目录、5 份轻量模板（含来源与许可）；`--sports` 另建 `02_动作分析/` 及动作分期表与 `movement-spec.json`，不另建固定线稿或多轮审核目录。重复运行保留用户文件，补齐缺失模板；目录/文件冲突和根目录以下的符号链接在写入前拒绝。用户选择的根路径会解析到真实位置；不要在初始化同时改动目录结构，磁盘故障不保证事务回滚。
+按 `--type` 建立不同作品类型的目录：`comic`（默认，科普漫画）与 `teaching`（教学与宣教插画）各建 5 个必要目录、5 份轻量模板（含来源与许可），分别使用页面清单与图版清单；`research`（科研示意图）建立图稿规格、可通过 `check_mechanism_graph.py` 的占位 `mechanism-graph.json` 与图注模板，不含角色或对白。`--sports` 可与任一类型叠加，另建 `02_动作分析/` 及动作分期表与 `movement-spec.json`，不另建固定线稿或多轮审核目录。重复运行保留用户文件，补齐缺失模板；目录/文件冲突和根目录以下的符号链接在写入前拒绝。用户选择的根路径会解析到真实位置；不要在初始化同时改动目录结构，磁盘故障不保证事务回滚。
 
 旧版 13 份模板不会被迁移或删除；沿用已有项目主稿即可，不为升级重建平行目录。

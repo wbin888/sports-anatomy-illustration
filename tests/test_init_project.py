@@ -189,6 +189,31 @@ class InitializeTests(unittest.TestCase):
         self.assertEqual(self.run_init(arguments=[str(self.root), "--sports"]).returncode, 0)
         self.assertEqual(before, self.snapshot())
 
+    def test_teaching_type_uses_plate_list_without_dialogue_page(self):
+        result = self.run_init(arguments=[str(self.root), "--type", "teaching"])
+        self.assertEqual(result.returncode, 0, result.stderr)
+        plates = (self.root / "04_脚本与分配表/图版清单.md").read_text(encoding="utf-8")
+        self.assertIn("宣教图附加项", plates)
+        self.assertFalse((self.root / "04_脚本与分配表/页面清单.md").exists())
+        self.assertIn("教学与宣教", (self.root / "00_项目规范/项目说明.md").read_text(encoding="utf-8"))
+
+    def test_research_type_creates_valid_mechanism_graph(self):
+        result = self.run_init(arguments=[str(self.root), "--type", "research", "--sports"])
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertFalse((self.root / "04_脚本与分配表").exists())
+        self.assertTrue((self.root / "05_图注与交付/图注.md").is_file())
+        self.assertTrue((self.root / "02_动作分析/movement-spec.json").is_file())
+        graph = self.root / "03_图稿规格/mechanism-graph.json"
+        self.assertNotIn("模板来源", graph.read_text(encoding="utf-8"))
+        checker = SCRIPT.with_name("check_mechanism_graph.py")
+        check = subprocess.run([sys.executable, str(checker), str(graph)], capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(check.returncode, 0, check.stdout)
+
+    def test_unknown_type_is_rejected(self):
+        result = self.run_init(arguments=[str(self.root), "--type", "poster"])
+        self.assertEqual(result.returncode, 2)
+        self.assertFalse(self.root.exists())
+
     def test_default_does_not_add_sports_templates(self):
         self.assertEqual(self.run_init().returncode, 0)
         self.assertFalse((self.root / "02_动作分析").exists())

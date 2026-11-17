@@ -1,0 +1,23 @@
+{
+  "title": "抗阻训练与骨骼肌肥大（README 示例，演示证据状态图例）",
+  "nodes": [
+    {"id": "rt", "label": "抗阻训练（机械负荷）", "compartment": "extracellular"},
+    {"id": "mech", "label": "机械感受", "compartment": "sarcolemma"},
+    {"id": "mtorc1", "label": "mTORC1 激活", "compartment": "cytoplasm"},
+    {"id": "mps", "label": "肌蛋白合成 ↑", "compartment": "cytoplasm"},
+    {"id": "csa", "label": "肌纤维横截面积 ↑", "compartment": "tissue"},
+    {"id": "rapa", "label": "雷帕霉素（实验性抑制剂）", "compartment": "extracellular"}
+  ],
+  "edges": [
+    {"id": "e1", "source": "rt", "target": "mech", "relation": "process", "evidence_status": "established", "directness": "unspecified", "source_ids": ["HOR11"], "line_style": "solid", "arrowhead": "arrow"},
+    {"id": "e2", "source": "mech", "target": "mtorc1", "relation": "activation", "evidence_status": "hypothesis", "directness": "unspecified", "source_ids": ["HOR11"], "line_style": "dashed", "arrowhead": "arrow"},
+    {"id": "e3", "source": "mtorc1", "target": "mps", "relation": "activation", "evidence_status": "established", "directness": "indirect", "source_ids": ["DRU09"], "line_style": "solid", "arrowhead": "arrow"},
+    {"id": "e4", "source": "rapa", "target": "mtorc1", "relation": "inhibition", "evidence_status": "established", "directness": "direct", "source_ids": ["DRU09"], "line_style": "solid", "arrowhead": "bar"},
+    {"id": "e5", "source": "mps", "target": "csa", "relation": "process", "evidence_status": "observed", "directness": "indirect", "source_ids": ["JOA20"], "line_style": "solid", "arrowhead": "arrow"}
+  ],
+  "sources": [
+    {"id": "HOR11", "citation": "Hornberger TA. Int J Biochem Cell Biol 2011;43(9):1267-1276. PMC3146557", "checked_scope": "机械负荷激活 mTORC1；具体感受机制尚未明确"},
+    {"id": "DRU09", "citation": "Drummond MJ et al. J Physiol 2009;587:1535-1546. doi:10.1113/jphysiol.2008.163816", "checked_scope": "人体中雷帕霉素阻断 mTORC1 及收缩诱导的肌蛋白合成增加"},
+    {"id": "JOA20", "citation": "Joanisse S et al. F1000Research 2020;9:141. PMID 32148775", "checked_scope": "抗阻训练诱导肌蛋白合成与肌肥大的关系（综述）"}
+  ]
+}

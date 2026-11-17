@@ -1,10 +1,22 @@
 {
   "name": "sports-anatomy-illustration",
-  "version": "1.0.0",
-  "description": "人体解剖与运动解剖插画 Skill：动作分期与肌肉分工、运动损伤与康复示意、医学科普漫画，含证据记录、生物力学自洽校验与可编辑交付流程。",
-  "author": {"name": "wbin888"},
+  "version": "1.1.0",
+  "description": "医学绘图 Skill：面向患者和公众的科普漫画、教学与宣教用的医学插画、涉及医学结构的科研示意图，并新增运动解剖（动作分期与肌肉分工、运动损伤与康复示意），含证据记录、生物力学自洽校验与可编辑交付流程。",
+  "author": {
+    "name": "wbin888"
+  },
   "homepage": "https://github.com/wbin888/sports-anatomy-illustration",
   "repository": "https://github.com/wbin888/sports-anatomy-illustration",
   "license": "MIT",
-  "keywords": ["anatomy", "sports-anatomy", "kinesiology", "medical-illustration", "skill"]
+  "keywords": [
+    "anatomy",
+    "sports-anatomy",
+    "kinesiology",
+    "medical-illustration",
+    "medical-comics",
+    "patient-education",
+    "scientific-illustration",
+    "graphical-abstract",
+    "skill"
+  ]
 }
