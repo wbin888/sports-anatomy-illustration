@@ -1,0 +1,61 @@
+---
+name: sports-anatomy-illustration
+description: "制作、返修或审阅人体解剖与运动解剖插画、训练动作肌肉分工图、动作分期/步态图、运动损伤与康复示意、医学科普漫画及涉及医学结构的科研示意图，兼顾真实参考、生物力学一致性、可编辑排字及出版交付。普通非医学插画不触发。"
+---
+
+# 运动解剖与医学绘图
+
+让读者通过画面看懂人体结构、动作与医学问题，并保留可追溯依据、可修改源文件和真实审核状态。沿用项目当前主稿、视觉基准和已有授权，按用户要求的作品与阶段完成任务。
+
+## 选择任务路径
+
+| 用户任务 | 入口 |
+|---|---|
+| 漫画脚本、分镜、对白，漫画或单幅解剖教学插画 | [漫画与医学插画流程](references/workflow.md)，按当前阶段读取 |
+| 运动解剖图、训练动作肌肉分工、动作分期/步态/跳跃图 | [运动解剖规则](references/sports-anatomy.md) + [动作分析](references/movement-analysis.md)，制作阶段仍沿用漫画与医学插画流程 |
+| 运动损伤机制、预防训练与康复动作示意 | [运动损伤与康复](references/sports-injury-and-rehab.md)，动作部分同上 |
+| 涉及医学结构的独立科研示意图、机制图、图形摘要 | [科研绘图流程](references/research-workflow.md) |
+| 局部返修、排字或审阅 | 沿用当前图稿，只读下表中对应说明 |
+
+漫画中的机制讲解和动作讲解继续走漫画流程，并叠加运动解剖规则。科研图以结构、关系与图注组织，不载入角色、对白或漫画初始化器。两类作品同时需要时分别维护图稿，复用来源 ID。只要求脚本或方案时交付到该阶段。
+
+## 按工作读取
+
+每行列出该主题的完整规则所在位置，遇到对应工作再读。已有记录够用时直接沿用。
+
+| 工作 | 规则与工具 |
+|---|---|
+| 新建或更改医学结构、动作、病灶，判断参考是否充分 | [真实参考与证据](references/anatomy-reference-search.md)，含来源充分性、实际看图/附图和用途判断 |
+| 关节动作、肌肉角色、收缩方式、力/力矩箭头 | [运动解剖规则](references/sports-anatomy.md)；术语与肌肉索引见 `data/joint-actions.json`、`data/muscles.json`（索引不是视觉证据） |
+| 动作分期规格与自洽校验 | [动作分析](references/movement-analysis.md)，`scripts/check_movement_spec.py <spec.json>`；`data/movements.json` 提供 5 个定性动作模板 |
+| 生图或资产制作 | [生成与资产](references/generation-and-assets.md)，含实际提示词、输入输出与画面修正 |
+| 漫画文字留白、气泡和正文取舍 | [文字空间](references/text-space-and-visible-copy.md) |
+| 漫画文案与可编辑排字 | [文案与排字](references/copy-and-lettering.md) |
+| 科研图规格、结构与关系语义 | [图稿规格](references/research-figure-spec.md)、[结构与机制](references/research-mechanisms.md)，复杂关系可选[关系记录](references/mechanism-records.md) |
+| PPTX 源稿及同版 PDF、PNG | [PPTX 制作与交付](references/pptx-delivery.md) |
+| Illustrator 排字或修改 | [运行与收尾](references/illustrator-runtime.md)，可选[排字库](references/illustrator-lettering.md) |
+| 审阅与返修 | [质量检查](references/qa-and-prepress.md)，含缺陷定位、修改保护与复核范围 |
+| 文件、版本及交付归档 | [文件管理](references/file-management.md) |
+| 缺少记录 | [漫画最小模板](references/templates.md)或科研图稿规格，按用途取用 |
+
+新独立漫画、医学插画或运动解剖插画尚无组织方式时，可运行 `scripts/init_project.py <项目目录>`，运动解剖项目加 `--sports`。既有项目沿用当前目录与主稿。
+
+## 共用医学与进度规则
+
+医学论断和结构受可核验证据约束。解剖图、机制示意、功能比喻与诊断影像须明确区分。探索性机制保留假说性质，功能模型不替代真实形态，生成影像不得充当诊断证据。本 Skill 不承担实验数据分析或统计作图。
+
+按风险确定核对深度：精细解剖、术式、查体、固定、训练示范和康复教学重点检查空间与操作，运动图另查侧别、分期、关节动作与收缩方式，机制图检查拓扑、区室和证据强度。普通对白、表情与非教学性生活场景检查人物、肢体和连续性。允许虚构生活情节，禁止编造医学因果、疗效、真实病例或第一人称真实经历。修改医学表达时核对条件、数值、概率与图文含义。
+
+人工审阅为建议环节，用户或项目明确要求先审后做时遵从。仅缺人工签字可继续已授权制作，交付状态为“制作完成，医学待审”。制作、视觉检查、医学图文对照、人工审签和投稿/印前批准分别记录，签名与批准只依据真实凭据。
+
+证据不足、侧别/结构冲突未解、必要用途许可缺失或已知医学错误，只暂停受影响步骤并继续独立工作。来源充分性按参考规则判断。缺独立线稿、无关模板字段或固定审核轮次不构成阻断理由。仅核查摘要时记录实际范围。
+
+## Agent 接入
+
+以本文件所在目录解析资源，脚本使用实际安装路径。原生 Skill 宿主加载完整目录，其余 Agent 可通过文件、资源或附件读取本入口及相关分支。自然语言请求即可选择任务，`$sports-anatomy-illustration` 仅适用于支持该语法的宿主。
+
+首次接入或能力缺失时读[能力映射](references/agent-integration.md)，需要配置环境时读[首次检查](references/first-run.md)。遵从实际工具说明和宿主权限，缺少执行或看图能力时交付已完成部分及具体待办。
+
+## 许可与来源
+
+本 Skill 改编自 wilbert 的 [medical-illustration](https://github.com/wilbert-MD-PhD/medical-illustration)（MIT），新增运动解剖分支、数据与校验脚本。整包采用 [MIT](LICENSE-CODE)，第三方材料保留原许可，见 [NOTICE.md](NOTICE.md)。新作品不自动继承上述许可。

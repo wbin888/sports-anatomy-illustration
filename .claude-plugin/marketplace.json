@@ -1,0 +1,11 @@
+{
+  "name": "sports-anatomy-illustration",
+  "owner": {"name": "wbin888"},
+  "plugins": [
+    {
+      "name": "sports-anatomy-illustration",
+      "source": "./",
+      "description": "人体解剖与运动解剖插画 Skill（改编自 wilbert-MD-PhD/medical-illustration，MIT）。"
+    }
+  ]
+}

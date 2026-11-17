@@ -1,0 +1,8 @@
+interface:
+  display_name: "运动解剖与医学绘图"
+  short_description: "人体/运动解剖插画、动作分期与肌肉分工图、运动损伤与康复示意的结构核验、可编辑绘制与交付"
+  brand_color: "#C2410C"
+  default_prompt: "使用 $sports-anatomy-illustration，根据我的具体任务选择运动解剖、动作分析、损伤康复、漫画或科研绘图分支，并完成相应工作。"
+
+policy:
+  allow_implicit_invocation: true

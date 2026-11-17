@@ -1,0 +1,74 @@
+{
+ "title": "示例：杠铃后蹲起立期肌肉分工",
+ "audience": "健身爱好者",
+ "view": {
+  "plane": "sagittal",
+  "side": "right"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "citation": "填写教材/研究：作者. 题名. 出处, 年份, 页码/图号, DOI",
+   "checked_scope": "填写该来源实际支持的结构关系或数值"
+  }
+ ],
+ "phases": [
+  {
+   "id": "ascent",
+   "name": "起立（向心）",
+   "events": "最低点 → 站立位",
+   "joint_actions": [
+    {
+     "joint": "hip",
+     "action": "extension"
+    },
+    {
+     "joint": "knee",
+     "action": "extension"
+    },
+    {
+     "joint": "ankle",
+     "action": "plantarflexion"
+    }
+   ],
+   "muscles": [
+    {
+     "muscle": "gluteus_maximus",
+     "role": "agonist",
+     "contraction": "concentric",
+     "controls": "hip:extension",
+     "source_ids": [
+      "S1"
+     ]
+    },
+    {
+     "muscle": "vastus_lateralis",
+     "role": "agonist",
+     "contraction": "concentric",
+     "controls": "knee:extension",
+     "source_ids": [
+      "S1"
+     ]
+    },
+    {
+     "muscle": "erector_spinae",
+     "role": "stabilizer",
+     "contraction": "isometric"
+    }
+   ],
+   "arrows": [
+    {
+     "type": "motion",
+     "target": "hip:extension"
+    },
+    {
+     "type": "force",
+     "target": "ground_reaction",
+     "source_ids": [
+      "S1"
+     ]
+    }
+   ]
+  }
+ ]
+}

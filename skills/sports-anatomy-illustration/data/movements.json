@@ -1,0 +1,902 @@
+{
+ "schema": "sports-anatomy-illustration/movements@1",
+ "status": "定性教学起点：只列常见关节动作、主要肌肉角色与收缩方式，不含角度、时序或 EMG 数值。用于作品前须按项目来源核对，并在 spec 的 sources 中登记。",
+ "movements": [
+  {
+   "id": "back_squat",
+   "title": "杠铃后蹲（Back squat）",
+   "view": {
+    "plane": "sagittal",
+    "side": "right"
+   },
+   "phases": [
+    {
+     "id": "descent",
+     "name": "下蹲（离心）",
+     "events": "站立位开始下降 → 最低点",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "flexion"
+      },
+      {
+       "joint": "knee",
+       "action": "flexion"
+      },
+      {
+       "joint": "ankle",
+       "action": "dorsiflexion"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "gluteus_maximus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "adductor_magnus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "vastus_medialis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "vastus_intermedius",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "rectus_femoris",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "soleus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "ankle:dorsiflexion"
+      },
+      {
+       "muscle": "erector_spinae",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      },
+      {
+       "muscle": "transversus_abdominis",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ]
+    },
+    {
+     "id": "ascent",
+     "name": "起立（向心）",
+     "events": "最低点 → 站立位",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "extension"
+      },
+      {
+       "joint": "knee",
+       "action": "extension"
+      },
+      {
+       "joint": "ankle",
+       "action": "plantarflexion"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "gluteus_maximus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "adductor_magnus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "vastus_medialis",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "vastus_intermedius",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "rectus_femoris",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "soleus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "ankle:plantarflexion"
+      },
+      {
+       "muscle": "erector_spinae",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      },
+      {
+       "muscle": "transversus_abdominis",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ],
+     "notes": "股直肌同时跨髋，起立时其伸膝作用与屈髋作用并存；画面不要把它表现为伸髋肌。"
+    }
+   ]
+  },
+  {
+   "id": "conventional_deadlift",
+   "title": "传统硬拉（Conventional deadlift）",
+   "view": {
+    "plane": "sagittal",
+    "side": "right"
+   },
+   "phases": [
+    {
+     "id": "liftoff",
+     "name": "离地至过膝（向心）",
+     "events": "杠铃离地 → 杠铃过膝",
+     "joint_actions": [
+      {
+       "joint": "knee",
+       "action": "extension"
+      },
+      {
+       "joint": "hip",
+       "action": "extension"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "vastus_medialis",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "vastus_intermedius",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "rectus_femoris",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "gluteus_maximus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "adductor_magnus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "semitendinosus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "semimembranosus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "biceps_femoris",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "erector_spinae",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      },
+      {
+       "muscle": "latissimus_dorsi",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      },
+      {
+       "muscle": "trapezius",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ],
+     "notes": "竖脊肌以等长收缩维持脊柱中立；不得画成脊柱屈伸驱动杠铃。"
+    },
+    {
+     "id": "lockout",
+     "name": "过膝至锁定（向心）",
+     "events": "杠铃过膝 → 髋膝完全伸直",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "extension"
+      },
+      {
+       "joint": "knee",
+       "action": "extension"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "gluteus_maximus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "semitendinosus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "semimembranosus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "biceps_femoris",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "erector_spinae",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ]
+    },
+    {
+     "id": "lowering",
+     "name": "下放（离心）",
+     "events": "锁定位 → 杠铃触地",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "flexion"
+      },
+      {
+       "joint": "knee",
+       "action": "flexion"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "gluteus_maximus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "semitendinosus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "semimembranosus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "biceps_femoris",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "erector_spinae",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "push_up",
+   "title": "标准俯卧撑（Push-up）",
+   "view": {
+    "plane": [
+     "sagittal",
+     "transverse"
+    ],
+    "side": "right"
+   },
+   "phases": [
+    {
+     "id": "descent",
+     "name": "下降（离心）",
+     "events": "肘伸直支撑 → 胸接近地面",
+     "joint_actions": [
+      {
+       "joint": "elbow",
+       "action": "flexion"
+      },
+      {
+       "joint": "shoulder",
+       "action": "horizontal_abduction"
+      },
+      {
+       "joint": "scapula",
+       "action": "retraction"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "pectoralis_major",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "shoulder:horizontal_abduction"
+      },
+      {
+       "muscle": "deltoid",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "shoulder:horizontal_abduction"
+      },
+      {
+       "muscle": "triceps_brachii",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "elbow:flexion"
+      },
+      {
+       "muscle": "serratus_anterior",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "scapula:retraction"
+      },
+      {
+       "muscle": "rectus_abdominis",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      },
+      {
+       "muscle": "transversus_abdominis",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      },
+      {
+       "muscle": "gluteus_maximus",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ],
+     "notes": "上臂与躯干夹角改变时肩关节动作会在水平外展与伸之间变化，须按实际视角和来源标注。"
+    },
+    {
+     "id": "ascent",
+     "name": "推起（向心）",
+     "events": "最低点 → 肘伸直",
+     "joint_actions": [
+      {
+       "joint": "elbow",
+       "action": "extension"
+      },
+      {
+       "joint": "shoulder",
+       "action": "horizontal_adduction"
+      },
+      {
+       "joint": "scapula",
+       "action": "protraction"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "pectoralis_major",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "shoulder:horizontal_adduction"
+      },
+      {
+       "muscle": "deltoid",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "shoulder:horizontal_adduction"
+      },
+      {
+       "muscle": "triceps_brachii",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "elbow:extension"
+      },
+      {
+       "muscle": "serratus_anterior",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "scapula:protraction"
+      },
+      {
+       "muscle": "rectus_abdominis",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      },
+      {
+       "muscle": "transversus_abdominis",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "running_gait",
+   "title": "跑步步态周期（右下肢）",
+   "view": {
+    "plane": [
+     "sagittal",
+     "frontal"
+    ],
+    "side": "right"
+   },
+   "phases": [
+    {
+     "id": "loading",
+     "name": "触地至支撑中期（承重吸收）",
+     "events": "右足触地 → 支撑中期",
+     "joint_actions": [
+      {
+       "joint": "knee",
+       "action": "flexion"
+      },
+      {
+       "joint": "ankle",
+       "action": "dorsiflexion"
+      },
+      {
+       "joint": "hip",
+       "action": "adduction"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "vastus_medialis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "vastus_intermedius",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "soleus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "ankle:dorsiflexion"
+      },
+      {
+       "muscle": "gastrocnemius",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "ankle:dorsiflexion"
+      },
+      {
+       "muscle": "gluteus_medius",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:adduction"
+      },
+      {
+       "muscle": "gluteus_maximus",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ],
+     "notes": "髋内收与对侧骨盆下沉在冠状面观察；仅用矢状面侧视图时应另加冠状面小图。"
+    },
+    {
+     "id": "propulsion",
+     "name": "支撑中期至离地（推进）",
+     "events": "支撑中期 → 右足离地",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "extension"
+      },
+      {
+       "joint": "knee",
+       "action": "extension"
+      },
+      {
+       "joint": "ankle",
+       "action": "plantarflexion"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "soleus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "ankle:plantarflexion"
+      },
+      {
+       "muscle": "gastrocnemius",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "ankle:plantarflexion"
+      },
+      {
+       "muscle": "gluteus_medius",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ],
+     "notes": "推进期伸髋的肌肉贡献随速度和研究方法而不同，引用 EMG 或逆动力学研究前不要指定主动肌。"
+    },
+    {
+     "id": "early_swing",
+     "name": "摆动前期",
+     "events": "离地 → 摆动中期",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "flexion"
+      },
+      {
+       "joint": "knee",
+       "action": "flexion"
+      },
+      {
+       "joint": "ankle",
+       "action": "dorsiflexion"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "iliopsoas",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "rectus_femoris",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "tibialis_anterior",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "ankle:dorsiflexion"
+      }
+     ]
+    },
+    {
+     "id": "terminal_swing",
+     "name": "摆动末期",
+     "events": "摆动中期 → 下一次触地前",
+     "joint_actions": [
+      {
+       "joint": "knee",
+       "action": "extension"
+      },
+      {
+       "joint": "hip",
+       "action": "flexion"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "semitendinosus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "semimembranosus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "biceps_femoris",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "tibialis_anterior",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ],
+     "notes": "腘绳肌在此期离心减速小腿前摆，常被讨论为拉伤高风险窗口；该观点仍有争议，图注须写明证据强度。"
+    }
+   ]
+  },
+  {
+   "id": "countermovement_jump",
+   "title": "反向纵跳（Countermovement jump）",
+   "view": {
+    "plane": "sagittal",
+    "side": "right"
+   },
+   "phases": [
+    {
+     "id": "countermovement",
+     "name": "下蹲预备（离心）",
+     "events": "站立 → 最低点",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "flexion"
+      },
+      {
+       "joint": "knee",
+       "action": "flexion"
+      },
+      {
+       "joint": "ankle",
+       "action": "dorsiflexion"
+      },
+      {
+       "joint": "shoulder",
+       "action": "extension"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "gluteus_maximus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "vastus_medialis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "vastus_intermedius",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "rectus_femoris",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "soleus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "ankle:dorsiflexion"
+      },
+      {
+       "muscle": "gastrocnemius",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "ankle:dorsiflexion"
+      }
+     ]
+    },
+    {
+     "id": "propulsion",
+     "name": "蹬伸（向心）",
+     "events": "最低点 → 离地",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "extension"
+      },
+      {
+       "joint": "knee",
+       "action": "extension"
+      },
+      {
+       "joint": "ankle",
+       "action": "plantarflexion"
+      },
+      {
+       "joint": "shoulder",
+       "action": "flexion"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "gluteus_maximus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "hip:extension"
+      },
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "vastus_medialis",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "vastus_intermedius",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "rectus_femoris",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "knee:extension"
+      },
+      {
+       "muscle": "soleus",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "ankle:plantarflexion"
+      },
+      {
+       "muscle": "gastrocnemius",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "ankle:plantarflexion"
+      },
+      {
+       "muscle": "deltoid",
+       "role": "agonist",
+       "contraction": "concentric",
+       "controls": "shoulder:flexion"
+      }
+     ],
+     "notes": "髋、膝、踝三关节伸展（triple extension）的先后顺序须引用来源后再画时序箭头。"
+    },
+    {
+     "id": "landing",
+     "name": "落地缓冲（离心）",
+     "events": "触地 → 稳定",
+     "joint_actions": [
+      {
+       "joint": "hip",
+       "action": "flexion"
+      },
+      {
+       "joint": "knee",
+       "action": "flexion"
+      },
+      {
+       "joint": "ankle",
+       "action": "dorsiflexion"
+      }
+     ],
+     "muscles": [
+      {
+       "muscle": "gluteus_maximus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "hip:flexion"
+      },
+      {
+       "muscle": "vastus_lateralis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "vastus_medialis",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "vastus_intermedius",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "rectus_femoris",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "knee:flexion"
+      },
+      {
+       "muscle": "soleus",
+       "role": "agonist",
+       "contraction": "eccentric",
+       "controls": "ankle:dorsiflexion"
+      },
+      {
+       "muscle": "gluteus_medius",
+       "role": "stabilizer",
+       "contraction": "isometric"
+      }
+     ],
+     "notes": "示范图中不要把膝外翻（膝内扣）画成正确落地姿势；相关风险表述见 references/sports-injury-and-rehab.md。"
+    }
+   ]
+  }
+ ]
+}

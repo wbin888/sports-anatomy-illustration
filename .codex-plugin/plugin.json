@@ -1,0 +1,16 @@
+{
+  "name": "sports-anatomy-illustration",
+  "version": "1.0.0",
+  "description": "Evidence-backed human and sports anatomy illustration: movement phases, muscle roles, injury and rehab figures, and medical comics.",
+  "author": {"name": "wbin888"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sports Anatomy Illustration",
+    "shortDescription": "Evidence-backed sports anatomy illustration workflow.",
+    "longDescription": "Plan and produce human and sports anatomy illustrations with real references, movement-phase specs checked against a muscle atlas, editable lettering, and separate production and human-review records.",
+    "developerName": "wbin888",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use $sports-anatomy-illustration to plan an evidence-backed sports anatomy illustration with the appropriate review and delivery checks."
+  }
+}

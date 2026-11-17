@@ -1,0 +1,501 @@
+{
+ "schema": "sports-anatomy-illustration/muscles@1",
+ "status": "教学索引，不是视觉证据。起止点、动作和神经根节段在不同教材间存在差异，作图与出版前须按项目选定来源逐项核对，并在来源记录中登记实际页码/图号。",
+ "suggested_sources": [
+  "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy.",
+  "Drake RL, Vogl AW, Mitchell AWM. Gray's Anatomy for Students.",
+  "Neumann DA. Kinesiology of the Musculoskeletal System.",
+  "Kendall FP, et al. Muscles: Testing and Function with Posture and Pain."
+ ],
+ "muscles": [
+  {
+   "id": "deltoid",
+   "name_zh": "三角肌",
+   "name_en": "Deltoid",
+   "region": "shoulder",
+   "origin": "锁骨外侧1/3、肩峰、肩胛冈",
+   "insertion": "肱骨三角肌粗隆",
+   "actions": [
+    "shoulder:abduction",
+    "shoulder:flexion",
+    "shoulder:extension",
+    "shoulder:medial_rotation",
+    "shoulder:lateral_rotation",
+    "shoulder:horizontal_adduction",
+    "shoulder:horizontal_abduction"
+   ],
+   "innervation": "腋神经",
+   "roots": "C5–C6",
+   "notes": "前束：屈、内旋、水平内收；中束：外展；后束：伸、外旋、水平外展。"
+  },
+  {
+   "id": "supraspinatus",
+   "name_zh": "冈上肌",
+   "name_en": "Supraspinatus",
+   "region": "rotator_cuff",
+   "origin": "肩胛骨冈上窝",
+   "insertion": "肱骨大结节上面",
+   "actions": [
+    "shoulder:abduction"
+   ],
+   "innervation": "肩胛上神经",
+   "roots": "C5–C6",
+   "notes": "参与启动外展并将肱骨头稳定于关节盂。"
+  },
+  {
+   "id": "infraspinatus",
+   "name_zh": "冈下肌",
+   "name_en": "Infraspinatus",
+   "region": "rotator_cuff",
+   "origin": "肩胛骨冈下窝",
+   "insertion": "肱骨大结节中面",
+   "actions": [
+    "shoulder:lateral_rotation",
+    "shoulder:horizontal_abduction"
+   ],
+   "innervation": "肩胛上神经",
+   "roots": "C5–C6"
+  },
+  {
+   "id": "teres_minor",
+   "name_zh": "小圆肌",
+   "name_en": "Teres minor",
+   "region": "rotator_cuff",
+   "origin": "肩胛骨外侧缘中部",
+   "insertion": "肱骨大结节下面",
+   "actions": [
+    "shoulder:lateral_rotation"
+   ],
+   "innervation": "腋神经",
+   "roots": "C5–C6"
+  },
+  {
+   "id": "subscapularis",
+   "name_zh": "肩胛下肌",
+   "name_en": "Subscapularis",
+   "region": "rotator_cuff",
+   "origin": "肩胛下窝",
+   "insertion": "肱骨小结节",
+   "actions": [
+    "shoulder:medial_rotation",
+    "shoulder:adduction"
+   ],
+   "innervation": "上、下肩胛下神经",
+   "roots": "C5–C6"
+  },
+  {
+   "id": "pectoralis_major",
+   "name_zh": "胸大肌",
+   "name_en": "Pectoralis major",
+   "region": "chest",
+   "origin": "锁骨头：锁骨内侧半；胸肋头：胸骨前面、第1–6肋软骨、腹外斜肌腱膜",
+   "insertion": "肱骨结节间沟外侧唇",
+   "actions": [
+    "shoulder:adduction",
+    "shoulder:medial_rotation",
+    "shoulder:flexion",
+    "shoulder:extension",
+    "shoulder:horizontal_adduction"
+   ],
+   "innervation": "胸外侧神经、胸内侧神经",
+   "roots": "C5–T1",
+   "notes": "锁骨头参与屈；胸肋头可使屈曲位肱骨伸展。"
+  },
+  {
+   "id": "latissimus_dorsi",
+   "name_zh": "背阔肌",
+   "name_en": "Latissimus dorsi",
+   "region": "back",
+   "origin": "T7–T12棘突、胸腰筋膜、髂嵴、下3–4肋",
+   "insertion": "肱骨结节间沟底",
+   "actions": [
+    "shoulder:extension",
+    "shoulder:adduction",
+    "shoulder:medial_rotation"
+   ],
+   "innervation": "胸背神经",
+   "roots": "C6–C8"
+  },
+  {
+   "id": "trapezius",
+   "name_zh": "斜方肌",
+   "name_en": "Trapezius",
+   "region": "back",
+   "origin": "上项线内1/3、枕外隆凸、项韧带、C7–T12棘突",
+   "insertion": "锁骨外侧1/3、肩峰、肩胛冈",
+   "actions": [
+    "scapula:elevation",
+    "scapula:retraction",
+    "scapula:depression",
+    "scapula:upward_rotation"
+   ],
+   "innervation": "副神经（运动）；C3–C4（本体感觉）",
+   "roots": "CN XI；C3–C4",
+   "notes": "上部：上提；中部：后缩；下部：下降；上、下部协同上回旋。"
+  },
+  {
+   "id": "serratus_anterior",
+   "name_zh": "前锯肌",
+   "name_en": "Serratus anterior",
+   "region": "chest",
+   "origin": "第1–8（9）肋外侧面",
+   "insertion": "肩胛骨内侧缘前面",
+   "actions": [
+    "scapula:protraction",
+    "scapula:upward_rotation"
+   ],
+   "innervation": "胸长神经",
+   "roots": "C5–C7",
+   "notes": "将肩胛骨贴附于胸廓；功能不良可见翼状肩胛。"
+  },
+  {
+   "id": "rhomboids",
+   "name_zh": "菱形肌",
+   "name_en": "Rhomboids",
+   "region": "back",
+   "origin": "大菱形肌：T2–T5棘突；小菱形肌：项韧带、C7–T1棘突",
+   "insertion": "肩胛骨内侧缘",
+   "actions": [
+    "scapula:retraction",
+    "scapula:downward_rotation",
+    "scapula:elevation"
+   ],
+   "innervation": "肩胛背神经",
+   "roots": "C4–C5"
+  },
+  {
+   "id": "biceps_brachii",
+   "name_zh": "肱二头肌",
+   "name_en": "Biceps brachii",
+   "region": "arm",
+   "origin": "短头：喙突尖；长头：盂上结节",
+   "insertion": "桡骨粗隆、肱二头肌腱膜",
+   "actions": [
+    "elbow:flexion",
+    "radioulnar:supination",
+    "shoulder:flexion"
+   ],
+   "innervation": "肌皮神经",
+   "roots": "C5–C6"
+  },
+  {
+   "id": "brachialis",
+   "name_zh": "肱肌",
+   "name_en": "Brachialis",
+   "region": "arm",
+   "origin": "肱骨前面远侧半",
+   "insertion": "尺骨冠突、尺骨粗隆",
+   "actions": [
+    "elbow:flexion"
+   ],
+   "innervation": "肌皮神经（部分受桡神经支配）",
+   "roots": "C5–C6（C7）"
+  },
+  {
+   "id": "triceps_brachii",
+   "name_zh": "肱三头肌",
+   "name_en": "Triceps brachii",
+   "region": "arm",
+   "origin": "长头：盂下结节；外侧头：桡神经沟上方肱骨后面；内侧头：桡神经沟下方肱骨后面",
+   "insertion": "尺骨鹰嘴",
+   "actions": [
+    "elbow:extension",
+    "shoulder:extension",
+    "shoulder:adduction"
+   ],
+   "innervation": "桡神经",
+   "roots": "C6–C8",
+   "notes": "长头跨肩关节。"
+  },
+  {
+   "id": "rectus_abdominis",
+   "name_zh": "腹直肌",
+   "name_en": "Rectus abdominis",
+   "region": "trunk",
+   "origin": "耻骨联合、耻骨嵴",
+   "insertion": "剑突、第5–7肋软骨",
+   "actions": [
+    "trunk:flexion"
+   ],
+   "innervation": "胸腹神经、肋下神经",
+   "roots": "T7–T12"
+  },
+  {
+   "id": "external_oblique",
+   "name_zh": "腹外斜肌",
+   "name_en": "External oblique",
+   "region": "trunk",
+   "origin": "第5–12肋外面",
+   "insertion": "白线、耻骨结节、髂嵴前半",
+   "actions": [
+    "trunk:flexion",
+    "trunk:lateral_flexion",
+    "trunk:rotation"
+   ],
+   "innervation": "胸腹神经、肋下神经",
+   "roots": "T7–T12",
+   "notes": "使躯干向对侧旋转。"
+  },
+  {
+   "id": "internal_oblique",
+   "name_zh": "腹内斜肌",
+   "name_en": "Internal oblique",
+   "region": "trunk",
+   "origin": "胸腰筋膜、髂嵴前2/3、腹股沟韧带外侧半",
+   "insertion": "第10–12肋下缘、白线、经联合腱至耻骨",
+   "actions": [
+    "trunk:flexion",
+    "trunk:lateral_flexion",
+    "trunk:rotation"
+   ],
+   "innervation": "胸腹神经、髂腹下神经、髂腹股沟神经",
+   "roots": "T7–L1",
+   "notes": "使躯干向同侧旋转。"
+  },
+  {
+   "id": "transversus_abdominis",
+   "name_zh": "腹横肌",
+   "name_en": "Transversus abdominis",
+   "region": "trunk",
+   "origin": "第7–12肋软骨内面、胸腰筋膜、髂嵴、腹股沟韧带外侧1/3",
+   "insertion": "白线、耻骨嵴、经联合腱至耻骨梳",
+   "actions": [],
+   "innervation": "胸腹神经、髂腹下神经、髂腹股沟神经",
+   "roots": "T7–L1",
+   "notes": "压缩腹腔、提高腹内压；无明确的关节主动作，作图时作为稳定肌表达。"
+  },
+  {
+   "id": "erector_spinae",
+   "name_zh": "竖脊肌",
+   "name_en": "Erector spinae",
+   "region": "trunk",
+   "origin": "髂嵴后部、骶骨背面、骶髂韧带、骶部与下腰椎棘突（总腱）",
+   "insertion": "肋角、椎骨横突与棘突、颞骨乳突",
+   "actions": [
+    "trunk:extension",
+    "trunk:lateral_flexion"
+   ],
+   "innervation": "脊神经后支",
+   "roots": "节段性",
+   "notes": "由髂肋肌、最长肌、棘肌组成。"
+  },
+  {
+   "id": "iliopsoas",
+   "name_zh": "髂腰肌",
+   "name_en": "Iliopsoas",
+   "region": "hip",
+   "origin": "腰大肌：T12–L5椎体侧面、椎间盘及L1–L5横突；髂肌：髂窝、骶骨翼",
+   "insertion": "股骨小转子",
+   "actions": [
+    "hip:flexion"
+   ],
+   "innervation": "腰大肌：腰丛前支；髂肌：股神经",
+   "roots": "L1–L3（腰大肌）；L2–L4（髂肌）"
+  },
+  {
+   "id": "gluteus_maximus",
+   "name_zh": "臀大肌",
+   "name_en": "Gluteus maximus",
+   "region": "hip",
+   "origin": "髂骨臀后线后方、骶骨与尾骨背面、骶结节韧带",
+   "insertion": "大部分止于髂胫束，部分深层纤维止于股骨臀肌粗隆",
+   "actions": [
+    "hip:extension",
+    "hip:lateral_rotation",
+    "hip:abduction"
+   ],
+   "innervation": "臀下神经",
+   "roots": "L5–S2",
+   "notes": "上部纤维参与外展；在屈髋位伸髋（如起立、爬坡）时作用突出。"
+  },
+  {
+   "id": "gluteus_medius",
+   "name_zh": "臀中肌",
+   "name_en": "Gluteus medius",
+   "region": "hip",
+   "origin": "髂骨外面（臀前线与臀后线之间）",
+   "insertion": "股骨大转子外侧面",
+   "actions": [
+    "hip:abduction",
+    "hip:medial_rotation"
+   ],
+   "innervation": "臀上神经",
+   "roots": "L4–S1",
+   "notes": "单腿支撑时稳定骨盆，防止对侧骨盆下沉。"
+  },
+  {
+   "id": "adductor_magnus",
+   "name_zh": "大收肌",
+   "name_en": "Adductor magnus",
+   "region": "hip",
+   "origin": "收肌部：耻骨下支、坐骨支；腘绳肌部：坐骨结节",
+   "insertion": "收肌部：臀肌粗隆、股骨粗线、内侧髁上线；腘绳肌部：收肌结节",
+   "actions": [
+    "hip:adduction",
+    "hip:flexion",
+    "hip:extension"
+   ],
+   "innervation": "收肌部：闭孔神经；腘绳肌部：坐骨神经胫部",
+   "roots": "L2–L4（收肌部）；L4（腘绳肌部）",
+   "notes": "收肌部参与屈髋，腘绳肌部参与伸髋。"
+  },
+  {
+   "id": "rectus_femoris",
+   "name_zh": "股直肌",
+   "name_en": "Rectus femoris",
+   "region": "thigh",
+   "origin": "髂前下棘、髋臼上方髂骨",
+   "insertion": "经股四头肌腱至髌底，经髌韧带止于胫骨粗隆",
+   "actions": [
+    "knee:extension",
+    "hip:flexion"
+   ],
+   "innervation": "股神经",
+   "roots": "L2–L4",
+   "notes": "双关节肌。"
+  },
+  {
+   "id": "vastus_lateralis",
+   "name_zh": "股外侧肌",
+   "name_en": "Vastus lateralis",
+   "region": "thigh",
+   "origin": "股骨大转子、股骨粗线外侧唇",
+   "insertion": "经股四头肌腱至髌骨，经髌韧带止于胫骨粗隆",
+   "actions": [
+    "knee:extension"
+   ],
+   "innervation": "股神经",
+   "roots": "L2–L4"
+  },
+  {
+   "id": "vastus_medialis",
+   "name_zh": "股内侧肌",
+   "name_en": "Vastus medialis",
+   "region": "thigh",
+   "origin": "转子间线、股骨粗线内侧唇",
+   "insertion": "经股四头肌腱至髌骨，经髌韧带止于胫骨粗隆",
+   "actions": [
+    "knee:extension"
+   ],
+   "innervation": "股神经",
+   "roots": "L2–L4"
+  },
+  {
+   "id": "vastus_intermedius",
+   "name_zh": "股中间肌",
+   "name_en": "Vastus intermedius",
+   "region": "thigh",
+   "origin": "股骨干前面及外侧面",
+   "insertion": "经股四头肌腱至髌骨，经髌韧带止于胫骨粗隆",
+   "actions": [
+    "knee:extension"
+   ],
+   "innervation": "股神经",
+   "roots": "L2–L4"
+  },
+  {
+   "id": "biceps_femoris",
+   "name_zh": "股二头肌",
+   "name_en": "Biceps femoris",
+   "region": "thigh",
+   "origin": "长头：坐骨结节；短头：股骨粗线外侧唇、外侧髁上线",
+   "insertion": "腓骨头外侧面",
+   "actions": [
+    "knee:flexion",
+    "knee:lateral_rotation",
+    "hip:extension"
+   ],
+   "innervation": "长头：坐骨神经胫部；短头：坐骨神经腓总部",
+   "roots": "L5–S2",
+   "notes": "长头为双关节肌；短头不跨髋关节。"
+  },
+  {
+   "id": "semitendinosus",
+   "name_zh": "半腱肌",
+   "name_en": "Semitendinosus",
+   "region": "thigh",
+   "origin": "坐骨结节",
+   "insertion": "胫骨上端内侧面（鹅足）",
+   "actions": [
+    "knee:flexion",
+    "knee:medial_rotation",
+    "hip:extension"
+   ],
+   "innervation": "坐骨神经胫部",
+   "roots": "L5–S2"
+  },
+  {
+   "id": "semimembranosus",
+   "name_zh": "半膜肌",
+   "name_en": "Semimembranosus",
+   "region": "thigh",
+   "origin": "坐骨结节",
+   "insertion": "胫骨内侧髁后部",
+   "actions": [
+    "knee:flexion",
+    "knee:medial_rotation",
+    "hip:extension"
+   ],
+   "innervation": "坐骨神经胫部",
+   "roots": "L5–S2"
+  },
+  {
+   "id": "gastrocnemius",
+   "name_zh": "腓肠肌",
+   "name_en": "Gastrocnemius",
+   "region": "leg",
+   "origin": "外侧头：股骨外侧髁外侧面；内侧头：股骨内侧髁上方腘面",
+   "insertion": "经跟腱止于跟骨结节",
+   "actions": [
+    "ankle:plantarflexion",
+    "knee:flexion"
+   ],
+   "innervation": "胫神经",
+   "roots": "S1–S2",
+   "notes": "双关节肌；伸膝位对踝跖屈贡献更大。"
+  },
+  {
+   "id": "soleus",
+   "name_zh": "比目鱼肌",
+   "name_en": "Soleus",
+   "region": "leg",
+   "origin": "腓骨头后面、腓骨后面上1/4、胫骨比目鱼肌线及内侧缘",
+   "insertion": "经跟腱止于跟骨结节",
+   "actions": [
+    "ankle:plantarflexion"
+   ],
+   "innervation": "胫神经",
+   "roots": "S1–S2",
+   "notes": "单关节肌；屈膝位跖屈时作用相对突出。"
+  },
+  {
+   "id": "tibialis_anterior",
+   "name_zh": "胫骨前肌",
+   "name_en": "Tibialis anterior",
+   "region": "leg",
+   "origin": "胫骨外侧髁、胫骨外侧面上半、骨间膜",
+   "insertion": "内侧楔骨内下面、第1跖骨底",
+   "actions": [
+    "ankle:dorsiflexion",
+    "subtalar:inversion"
+   ],
+   "innervation": "腓深神经",
+   "roots": "L4–L5"
+  },
+  {
+   "id": "fibularis_longus",
+   "name_zh": "腓骨长肌",
+   "name_en": "Fibularis (peroneus) longus",
+   "region": "leg",
+   "origin": "腓骨头、腓骨外侧面上2/3",
+   "insertion": "第1跖骨底、内侧楔骨",
+   "actions": [
+    "subtalar:eversion",
+    "ankle:plantarflexion"
+   ],
+   "innervation": "腓浅神经",
+   "roots": "L5–S2",
+   "notes": "跖屈作用较弱；支持足横弓。"
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "schema": "sports-anatomy-illustration/joint-actions@1",
+ "planes": {
+  "sagittal": "矢状面（冠状轴）",
+  "frontal": "冠状面/额状面（矢状轴）",
+  "transverse": "水平面/横断面（垂直轴）"
+ },
+ "joints": {
+  "shoulder": [
+   "flexion",
+   "extension",
+   "abduction",
+   "adduction",
+   "medial_rotation",
+   "lateral_rotation",
+   "horizontal_abduction",
+   "horizontal_adduction"
+  ],
+  "scapula": [
+   "elevation",
+   "depression",
+   "protraction",
+   "retraction",
+   "upward_rotation",
+   "downward_rotation"
+  ],
+  "elbow": [
+   "flexion",
+   "extension"
+  ],
+  "radioulnar": [
+   "supination",
+   "pronation"
+  ],
+  "wrist": [
+   "flexion",
+   "extension",
+   "radial_deviation",
+   "ulnar_deviation"
+  ],
+  "trunk": [
+   "flexion",
+   "extension",
+   "lateral_flexion",
+   "rotation"
+  ],
+  "hip": [
+   "flexion",
+   "extension",
+   "abduction",
+   "adduction",
+   "medial_rotation",
+   "lateral_rotation"
+  ],
+  "knee": [
+   "flexion",
+   "extension",
+   "medial_rotation",
+   "lateral_rotation"
+  ],
+  "ankle": [
+   "dorsiflexion",
+   "plantarflexion"
+  ],
+  "subtalar": [
+   "inversion",
+   "eversion"
+  ]
+ },
+ "opposites": {
+  "flexion": "extension",
+  "abduction": "adduction",
+  "medial_rotation": "lateral_rotation",
+  "horizontal_abduction": "horizontal_adduction",
+  "dorsiflexion": "plantarflexion",
+  "inversion": "eversion",
+  "supination": "pronation",
+  "elevation": "depression",
+  "protraction": "retraction",
+  "upward_rotation": "downward_rotation",
+  "radial_deviation": "ulnar_deviation"
+ },
+ "action_plane": {
+  "flexion": "sagittal",
+  "extension": "sagittal",
+  "dorsiflexion": "sagittal",
+  "plantarflexion": "sagittal",
+  "abduction": "frontal",
+  "adduction": "frontal",
+  "lateral_flexion": "frontal",
+  "inversion": "frontal",
+  "eversion": "frontal",
+  "elevation": "frontal",
+  "depression": "frontal",
+  "upward_rotation": "frontal",
+  "downward_rotation": "frontal",
+  "radial_deviation": "frontal",
+  "ulnar_deviation": "frontal",
+  "medial_rotation": "transverse",
+  "lateral_rotation": "transverse",
+  "rotation": "transverse",
+  "horizontal_abduction": "transverse",
+  "horizontal_adduction": "transverse",
+  "supination": "transverse",
+  "pronation": "transverse",
+  "protraction": "transverse",
+  "retraction": "transverse"
+ },
+ "action_zh": {
+  "flexion": "屈",
+  "extension": "伸",
+  "abduction": "外展",
+  "adduction": "内收",
+  "medial_rotation": "内旋",
+  "lateral_rotation": "外旋",
+  "horizontal_abduction": "水平外展",
+  "horizontal_adduction": "水平内收",
+  "elevation": "上提",
+  "depression": "下降",
+  "protraction": "前伸",
+  "retraction": "后缩",
+  "upward_rotation": "上回旋",
+  "downward_rotation": "下回旋",
+  "supination": "旋后",
+  "pronation": "旋前",
+  "radial_deviation": "桡偏",
+  "ulnar_deviation": "尺偏",
+  "lateral_flexion": "侧屈",
+  "rotation": "旋转",
+  "dorsiflexion": "背屈",
+  "plantarflexion": "跖屈",
+  "inversion": "内翻",
+  "eversion": "外翻"
+ }
+}
