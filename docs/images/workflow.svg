@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="230" viewBox="0 0 1000 230">
+<defs>
+  <pattern id="ecc" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" fill="#FFEDD5"/><rect width="4" height="8" fill="#EA580C"/>
+  </pattern>
+  <pattern id="iso" width="7" height="7" patternUnits="userSpaceOnUse">
+    <rect width="7" height="7" fill="#DBEAFE"/><circle cx="3.5" cy="3.5" r="1.8" fill="#2563EB"/>
+  </pattern>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+  </marker>
+  <marker id="arrowA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#C2410C"/>
+  </marker>
+</defs>
+<rect width="1000" height="230" rx="18" fill="#FFFFFF"/>
+<text x="40.0" y="46.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="22" font-weight="bold" fill="#1F2937" text-anchor="start">制作流程</text>
+<text x="140.0" y="46.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">运动解剖模块在原医学绘图流程上增加动作规格与校验（橙色）</text>
+<rect x="40" y="76" width="138" height="96" rx="14" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<circle cx="64" cy="104" r="13" fill="#1F2937"/>
+<text x="64.0" y="109.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="84.0" y="110.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="17" font-weight="bold" fill="#1F2937" text-anchor="start">动作问题</text>
+<text x="109.0" y="148.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="12" font-weight="normal" fill="#6B7280" text-anchor="middle">读者要看懂什么</text>
+<line x1="181" y1="124" x2="201" y2="124" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="204" y="76" width="138" height="96" rx="14" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<circle cx="228" cy="104" r="13" fill="#1F2937"/>
+<text x="228.0" y="109.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="248.0" y="110.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="17" font-weight="bold" fill="#1F2937" text-anchor="start">真实取证</text>
+<text x="273.0" y="148.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="12" font-weight="normal" fill="#6B7280" text-anchor="middle">教材 / EMG / 动捕</text>
+<line x1="345" y1="124" x2="365" y2="124" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="368" y="76" width="138" height="96" rx="14" fill="#FFF7ED" stroke="#C2410C" stroke-width="2.5"/>
+<circle cx="392" cy="104" r="13" fill="#C2410C"/>
+<text x="392.0" y="109.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="412.0" y="110.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="17" font-weight="bold" fill="#1F2937" text-anchor="start">动作规格</text>
+<text x="437.0" y="148.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="12" font-weight="normal" fill="#6B7280" text-anchor="middle">movement-spec.json</text>
+<line x1="509" y1="124" x2="529" y2="124" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="532" y="76" width="138" height="96" rx="14" fill="#FFF7ED" stroke="#C2410C" stroke-width="2.5"/>
+<circle cx="556" cy="104" r="13" fill="#C2410C"/>
+<text x="556.0" y="109.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="576.0" y="110.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="17" font-weight="bold" fill="#1F2937" text-anchor="start">自洽校验</text>
+<text x="601.0" y="148.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="12" font-weight="normal" fill="#6B7280" text-anchor="middle">规格校验脚本</text>
+<line x1="673" y1="124" x2="693" y2="124" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="696" y="76" width="138" height="96" rx="14" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<circle cx="720" cy="104" r="13" fill="#1F2937"/>
+<text x="720.0" y="109.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="740.0" y="110.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="17" font-weight="bold" fill="#1F2937" text-anchor="start">生成与排字</text>
+<text x="765.0" y="148.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="12" font-weight="normal" fill="#6B7280" text-anchor="middle">无字底图 + 可编辑字</text>
+<line x1="837" y1="124" x2="857" y2="124" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="860" y="76" width="138" height="96" rx="14" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<circle cx="884" cy="104" r="13" fill="#1F2937"/>
+<text x="884.0" y="109.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="904.0" y="110.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="17" font-weight="bold" fill="#1F2937" text-anchor="start">质检交付</text>
+<text x="929.0" y="148.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="12" font-weight="normal" fill="#6B7280" text-anchor="middle">医学待审 / 审签</text>
+<text x="40.0" y="208.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="13" font-weight="normal" fill="#6B7280" text-anchor="start">校验通过只说明规格自洽，不代表医学正确；医学审签与制作状态分开记录。</text>
+</svg>

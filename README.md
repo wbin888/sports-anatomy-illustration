@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/images/banner.png" alt="运动解剖与医学绘图 Skill 横幅" width="100%"></p>
+
 # 运动解剖与医学绘图 Skill · Sports Anatomy Illustration
 
 [![Validate](https://github.com/wbin888/sports-anatomy-illustration/actions/workflows/validate.yml/badge.svg)](https://github.com/wbin888/sports-anatomy-illustration/actions/workflows/validate.yml)
@@ -12,6 +14,10 @@
 本项目改编自 [wilbert-MD-PhD/medical-illustration](https://github.com/wilbert-MD-PhD/medical-illustration)（MIT），并新增运动解剖模块。
 
 ## 新增的运动解剖模块
+
+<p align="center"><img src="docs/images/squat-phases.png" alt="杠铃后蹲两分期肌肉分工示意：下蹲离心、起立向心，竖脊肌等长稳定" width="100%"></p>
+
+<p align="center"><sub>示例：由 Skill 的收缩方式编码规则绘制（示意图，非按比例）。</sub></p>
 
 | 内容 | 位置 |
 |---|---|
@@ -32,6 +38,10 @@
 - 关节动作不在当前观察平面内，例如在侧视图中标注髋内收
 
 > 数据文件只是教学索引，不能作为视觉证据。起止点、神经根节段等在不同教材间存在差异，作图前须按所选来源逐项核对。
+
+## 制作流程
+
+<p align="center"><img src="docs/images/workflow.png" alt="制作流程：动作问题、真实取证、动作规格、自洽校验、生成与排字、质检交付" width="100%"></p>
 
 ## 安装
 
@@ -76,5 +86,5 @@ python3 tests/test_illustrator_runtime.py
 ## 许可与免责声明
 
 - 整包采用 [MIT](LICENSE)：Copyright © 2026 wilbert（上游核心 Skill），Copyright © 2026 wbin888（改编与运动解剖模块）。改编内容见 [NOTICE.md](skills/sports-anatomy-illustration/NOTICE.md)。
-- 上游仓库中以 CC BY 4.0 授权的展示内容未复制到本仓库。
+- 上游仓库中以 CC BY 4.0 授权的展示内容未复制到本仓库。README 中的图片为本仓库原创示意图，可用 `python3 docs/images/generate.py` 重新生成。
 - 本 Skill 只提供制作与质控流程，**不构成医疗、训练或康复建议**，不代表任何作品已通过医学审核。缺少人工审签的作品，应标为“制作完成，医学待审”。

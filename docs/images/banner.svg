@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+<defs>
+  <pattern id="ecc" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" fill="#FFEDD5"/><rect width="4" height="8" fill="#EA580C"/>
+  </pattern>
+  <pattern id="iso" width="7" height="7" patternUnits="userSpaceOnUse">
+    <rect width="7" height="7" fill="#DBEAFE"/><circle cx="3.5" cy="3.5" r="1.8" fill="#2563EB"/>
+  </pattern>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#1F2937"/>
+  </marker>
+  <marker id="arrowA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#C2410C"/>
+  </marker>
+</defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C2D12"/><stop offset="1" stop-color="#C2410C"/></linearGradient>
+<rect width="1000" height="260" rx="20" fill="url(#bg)"/>
+<text x="48.0" y="96.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="start">运动解剖与医学绘图</text>
+<text x="50.0" y="134.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="22" font-weight="normal" fill="#FED7AA" text-anchor="start">Sports Anatomy Illustration · Agent Skill</text>
+<text x="50.0" y="178.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="18" font-weight="normal" fill="#FFFFFF" text-anchor="start">动作分期 · 肌肉分工 · 损伤与康复示意 · 真实取证 · 可编辑交付</text>
+<rect x="50" y="200" width="156" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.16" stroke="#FED7AA"/>
+<text x="128.0" y="221.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="normal" fill="#FFFFFF" text-anchor="middle">33 块运动肌图谱</text>
+<rect x="218" y="200" width="128" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.16" stroke="#FED7AA"/>
+<text x="282.0" y="221.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="normal" fill="#FFFFFF" text-anchor="middle">5 个动作模板</text>
+<rect x="358" y="200" width="128" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.16" stroke="#FED7AA"/>
+<text x="422.0" y="221.0" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif" font-size="14" font-weight="normal" fill="#FFFFFF" text-anchor="middle">动作规格校验器</text>
+<circle cx="845" cy="130" r="112" fill="#FFFFFF" fill-opacity="0.95"/>
+<g transform="translate(815 205) scale(0.62)"><line x1="42.9" y1="-199.5" x2="-48.8" y2="-104.6" stroke="#1F2937" stroke-width="43" stroke-linecap="round"/>
+<line x1="-48.8" y1="-104.6" x2="62.6" y2="-92.9" stroke="#1F2937" stroke-width="33" stroke-linecap="round"/>
+<line x1="62.6" y1="-92.9" x2="0.0" y2="0.0" stroke="#1F2937" stroke-width="27" stroke-linecap="round"/>
+<line x1="42.9" y1="-199.5" x2="-48.8" y2="-104.6" stroke="#F3E8DC" stroke-width="40" stroke-linecap="round"/>
+<line x1="-48.8" y1="-104.6" x2="62.6" y2="-92.9" stroke="#F3E8DC" stroke-width="30" stroke-linecap="round"/>
+<line x1="62.6" y1="-92.9" x2="0.0" y2="0.0" stroke="#F3E8DC" stroke-width="24" stroke-linecap="round"/>
+<path d="M-14.0,14.0 L-6.0,-8.0 L10.0,-6.0 L46.0,14.0 Z" fill="#F3E8DC" stroke="#1F2937" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="67.8" cy="-227.1" r="21" fill="#F3E8DC" stroke="#1F2937" stroke-width="2"/>
+<line x1="-48.8" y1="-104.6" x2="62.6" y2="-92.9" stroke="#E5E7EB" stroke-width="5" stroke-linecap="round"/>
+<line x1="62.6" y1="-92.9" x2="0.0" y2="0.0" stroke="#E5E7EB" stroke-width="5" stroke-linecap="round"/>
+<line x1="-48.8" y1="-104.6" x2="42.9" y2="-199.5" stroke="#E5E7EB" stroke-width="5" stroke-linecap="round"/>
+<path d="M-33.0,-104.9 L-32.7,-106.9 Q10.8,-114.4 51.9,-98.0 L51.7,-96.0 Z" fill="#DC2626" stroke="#1F2937" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M56.0,-86.5 L54.3,-87.7 Q21.0,-66.9 14.2,-28.2 L15.9,-27.1 Z" fill="#DC2626" stroke="#1F2937" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M32.3,-191.4 L25.1,-198.4 Q-14.9,-165.5 -46.4,-124.3 L-39.2,-117.3 Z" fill="url(#iso)" stroke="#1F2937" stroke-width="1.2" stroke-linejoin="round"/>
+<ellipse cx="-44.4" cy="-89.0" rx="24" ry="14" transform="rotate(6.0 -44.4 -89.0)" fill="#DC2626" stroke="#1F2937" stroke-width="1.2"/>
+<circle cx="-48.8" cy="-104.6" r="6" fill="#fff" stroke="#1F2937" stroke-width="2"/>
+<circle cx="62.6" cy="-92.9" r="6" fill="#fff" stroke="#1F2937" stroke-width="2"/>
+<circle cx="0.0" cy="0.0" r="6" fill="#fff" stroke="#1F2937" stroke-width="2"/>
+<circle cx="27.1" cy="-208.8" r="15" fill="#374151"/><circle cx="27.1" cy="-208.8" r="5" fill="#9CA3AF"/></g>
+</svg>
